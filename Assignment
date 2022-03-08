@@ -1,0 +1,66 @@
+ <!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" /> <!-- reset css -->
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<style>
+    body{ background-color: ivory; }
+    canvas{border:1px solid black;}
+</style>
+<script>
+$(function(){
+    var canvas=document.getElementById("canvas");
+    var ctx=canvas.getContext("2d");
+    ctx.textAlign = "center";
+        ctx.font = "bold 20px arial";
+        ctx.fillStyle = "black"
+            ctx.fillText("Happy",150,75);
+            ctx.fillStyle = "black"
+            ctx.fillText("Birthday",150,110);
+            ctx.fillStyle = "Blue"
+            ctx.fillText("Priyanka", 150, 140);
+           
+            
+            ctx.fillStyle = "red"
+            ctx.fillText("Your Birthdate : 16/07/1999", 150, 180);
+            
+            
+}); 
+
+</script>
+</head>
+<body>
+    
+ <p>Name <input type="text" id="name"></p>
+    <canvas id="canvas" width=300 height=200></canvas>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ <!DOCTYPE HTML>
+<html>
+   <head>
+      <title>HTML5 Canvas Tag</title>
+   </head>
+   <body>
+      <canvas id="newCanvas" width="300" height="250"></canvas>
+      <script>
+         var canvas = document.getElementById('newCanvas');
+         var ctx = canvas.getContext('2d');
+         ctx.fillStyle = "blue";
+         ctx.beginPath();
+         ctx.moveTo(108, 0.0);
+         ctx.lineTo(141, 70);
+         ctx.lineTo(218, 78.3);
+         ctx.lineTo(162, 131);
+         ctx.lineTo(175, 205);
+         ctx.lineTo(108, 170);
+         ctx.lineTo(41.2, 205);
+         ctx.lineTo(55, 131);
+         ctx.lineTo(1, 78);
+         ctx.lineTo(75, 68);
+         ctx.lineTo(108, 0);
+         ctx.closePath();
+         ctx.fill();
+      </script>
+   </body>
+</html>
